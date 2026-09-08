@@ -253,7 +253,7 @@ git clone git@github.com:ULL-IB/P01-IaaS.git P01-EntornoIaaS
 
 #### Edición y compilación
 16. Colóquese en el directorio `practicas` (`cd ~/practicas`) y utilice el editor `vi` para escribir el código fuente del programa 
-[hello_world.cc](https://github.com/fsande/IB-class-code-examples/blob/master/IntroductionToC%2B%2B/hello_world.cc).
+[hello_world.cc](https://github.com/ULL-IB/code-examples/blob/main/introduction/hello_world.cc).
 A continuación, compile y ejecute ese programa.
 Para compilar el programa escriba el siguiente comando (que estudiaremos más adelante en la asignatura)
 
