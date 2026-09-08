@@ -248,7 +248,7 @@ $ cat ~/.ssh/id_ed25519.pub
 cd
 mkdir practicas
 cd practicas
-git clone git@github.com:IB-2026-2027/P01-IaaS.git 2026-2027-IB-P01-EntornoIaaS
+git clone git@github.com:ULL-IB/P01-IaaS.git P01-EntornoIaaS
 ```
 
 #### Edición y compilación
