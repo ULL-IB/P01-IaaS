@@ -241,14 +241,14 @@ $ cat ~/.ssh/id_ed25519.pub
   - El primer comando le preguntará dónde generar la clave y si desea darle una contraseña. En ambos casos puede pulsar *Enter* sin escribir ningún valor para mantener los valores por defecto.
   - El cuarto comando mostrará por pantalla todo el contenido de la clave generada, que debería ser una línea que comienza por `ssh-ed25519` y termina con su cuenta de correo electrónico. Seleccione y copie la línea completa.
   - En su cuenta de GitHub, haga clic en el icono con su foto en la esquina superior derecha y luego en *Settings.* En la columna izquierda, haga clic *SSH and GPG keys* del apartado *Access* y luego en el botón *New SSH key.*
-  - Dé a su nueva clave el nombre que prefiera (por ejemplos, "Informática Básica 2025/2026") y pegue el contenido de la clave generada. Pulse en "Add SSH Key" y su cuenta GitHub quedará enlazada con su máquina virtual.
+  - Dé a su nueva clave el nombre que prefiera (por ejemplos, "Informática Básica 2026/2027") y pegue el contenido de la clave generada. Pulse en "Add SSH Key" y su cuenta GitHub quedará enlazada con su máquina virtual.
 
 15. Cree un directorio `practicas` y clone en él un repositorio git:
 ```
 cd
 mkdir practicas
 cd practicas
-git clone git@github.com:IB-2025-2026/P01-IaaS.git 2025-2026-IB-P01-EntornoIaaS
+git clone git@github.com:IB-2026-2027/P01-IaaS.git 2026-2027-IB-P01-EntornoIaaS
 ```
 
 #### Edición y compilación
