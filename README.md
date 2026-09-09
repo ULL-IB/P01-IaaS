@@ -48,21 +48,10 @@ Tenga esto en cuenta a la hora de decidirse por cualquiera de estas opciones.
 Una opción alternativa que se considera menos adecuada consiste en no instalar un sistema Linux sino acceder 
 a la máquina virtual IaaS de la asignatura desde Windows usando para ello un cliente *ssh*. 
 Se recomienda para este caso utilizar el que viene instalado con Windows 10 y posteriores, a través de la aplicación *Símbolo del Sistema*, o a través del [cliente ssh PuTTY](https://www.putty.org/) que puede Ud. descargar libremente.  
-[Este vídeo](https://www.youtube.com/watch?v=_-rS8QM0JaI) muestra cómo configurar la VPN en Windows y cómo usar Putty para acceder a una máquina virtual.
 
-En todo caso recuerde que si desea acceder a las máquinas de la Universidad desde fuera del campus
-universitario necesitará Ud. configurar una conexión usando [VPN](https://es.wikipedia.org/wiki/Red_privada_virtual).
-Para configurar la conexión VPN siga las instrucciones de la página [Servicio de VPN de la ULL](https://www.ull.es/servicios/stic/2016/05/10/servicio-de-vpn-de-la-ull/).  
-Para conexiones VPN usando Windows ha de instalar la aplicación Global Protect tal como se explica en el documento
-[Guía de configuración del cliente VPN GlobalProtect. Sistema Operativo Windows](https://drive.google.com/open?id=0B3mzWpxzbJD1Zm9TdmpXSV9mdGs).
-[Esta imagen](https://raw.githubusercontent.com/fsande/IB-P01-EntornoIaaS/3b0223eef4fff02835108ac59ea8d2f2f26c43cc/img/GlobalProtect.PNG)
-muestra el establecimiento de la conexión VPN con la red de la ULL,
-[esta otra](https://raw.githubusercontent.com/fsande/IB-P01-EntornoIaaS/3b0223eef4fff02835108ac59ea8d2f2f26c43cc/img/GlobalProtect_InicioSesi%C3%B3n.PNG)
-muestra el inicio de sesión y finalmente
-[esta última](https://raw.githubusercontent.com/fsande/IB-P01-EntornoIaaS/3b0223eef4fff02835108ac59ea8d2f2f26c43cc/img/GlobalProtect_Conectado.PNG)
-muestra la conexión ya establecida.
-
-[Este vídeo](https://youtu.be/ZHZ-R--fQ68) muestra cómo establecer en linux una conexión vpn y [este otro](https://www.youtube.com/watch?v=jHUfeN_NMYE&feature=youtu.be) muestra cómo conectar desde linux usando ssh con una máquina virtual del IaaS.
+En todo caso, recuerde que si desea acceder a las máquinas de la Universidad desde fuera del campus universitario necesitará Ud. configurar una conexión usando [VPN](https://es.wikipedia.org/wiki/Red_privada_virtual).
+Para configurar la conexión VPN siga las instrucciones de la página [Servicio de VPN de la ULL](https://www.ull.es/servicios/stic/2026/07/08/servicio-de-vpn-de-la-ull/).  
+[Este vídeo](https://www.youtube.com/watch?v=jHUfeN_NMYE) muestra cómo conectar desde linux usando ssh con una máquina virtual del IaaS.
 
 #### Dirección de correo alternativa
 2. Acceda al [portal de gestión de usuarios](https://usuarios.ull.es/autogestion/cambio_alias/)
@@ -274,7 +263,7 @@ Los siguientes dos pasos son opcionales y deben ejecutarse en el equipo *desde e
 para establecer la configuración de la máquina de modo que se pueda conectar a ella sin necesidad de escribir el password en cada conexión. 
 Para poder conectarse por ssh con las máquinas virtuales de IaaS ull ha de autentificarse en la página [valida.ull.es](https://valida.ull.es).  
 Recuerde que en caso de acceder desde fuera de del campus ULL ha de hacerlo mediante una conexión VPN. 
-Consulte [esta referencia](https://www.ull.es/servicios/stic/2016/05/10/servicio-de-vpn-de-la-ull/) 
+Consulte [esta referencia](https://www.ull.es/servicios/stic/2026/07/08/servicio-de-vpn-de-la-ull/) 
 (en el Centro de Cálculo, por ahora no lo necesita) para conectarse a través de vpn.
 
 18. También resulta conveniente utilizar alguno de los métodos (ssh config o alias) que se presentan en 
