@@ -101,16 +101,11 @@ Si tiene Ud. alguna duda, consulte con el personal del CC.
 
 
 ### El Entorno ULL-IaaS
-6. Estudie el documento 
-[Manual de administración de Máquinas](https://docs.google.com/document/d/1nj-dxu7LXrNhj3ewCdfaPSc8OV4e_TYpGTQdK78YExY/edit).
-Tenga en cuenta que el acceso a la infraestructura IaaS está ligado a que esté Ud. registrada/o en el Aula Virtual de la Asignatura.
-Siga las instrucciones de ese documento para acceder a la [interfaz web de las máquinas IaaS](https://iaas.ull.es).
-
-7. Inicie sesión en Linux en alguno de los PCs de una sala del Centro de Cálculo o bien desde otro ordenador usando VPN si lo hace desde fuera de la Universidad.
+6. Inicie sesión en Linux en alguno de los PCs de una sala del Centro de Cálculo o bien desde otro ordenador usando VPN si lo hace desde fuera de la Universidad.
 En este documento se denominará máquina remota a la máquina virtual (VM) del [IaaS-ULL](https://www.ull.es/servicios/stic/2015/10/27/nuevo-servicio-iaas/) 
 y máquina local al PC en el que está Ud. trabajando.
 
-8. Acceda a la [interfaz web](https://iaas.ull.es/ovirt-engine/sso/login.html) 
+7. Acceda a la [interfaz web](https://iaas.ull.es) 
 de la plataforma IaaS-ULL (recuerde tener iniciada una conexión VPN si trabaja desde fuera del campus universitario) y autentifíquese en esa interfaz con sus credenciales (username + password) de la cuenta institucional. Si no tiene acceso a la plataforma, identifíquese primero en el [sistema de autenticación de la ULL](https://valida.ull.es/) y vuelva a intentarlo. 
 
 ![login](ovirt-login.png)
@@ -135,7 +130,7 @@ la dirección de la máquina no ha cambiado.
 
 Observe que en la página en la que se encuentra también hay un botón de "Reiniciar" (que usaremos más adelante) y uno de "Apagar". **Nunca pulse el botón de Apagar ni ejecute la orden `halt` desde su máquina virtual,** ya que las máquinas virtuales de este servicio no tienen estado interno y apagarlas de esta manera eliminaría permanentemente todo su contenido, incluyendo su sistema operativo.
 
-9. Abra una conexión ssh con su máquina usando la dirección IP que ha obtenido en el paso anterior.
+8. Abra una conexión ssh con su máquina usando la dirección IP que ha obtenido en el paso anterior.
 Si esa conexión la realiza desde Linux el comando que ha de usar para establecerla es el siguiente, cambiando la dirección IP por la de su máquina:
 ```
 $ ssh usuario@10.6.131.106
@@ -162,7 +157,7 @@ Compruebe a continuación el sistema operativo y versión del mismo:
 $ lsb_release -a
 ```
 
-10. Actualice el software (paquetes) de la máquina siguiendo las indicaciones de [esta página](https://linuxconfig.org/how-to-update-ubuntu-packages-on-18-04-bionic-beaver-linux) (por ejemplo).
+9. Actualice el software (paquetes) de la máquina siguiendo las indicaciones de [esta página](https://linuxconfig.org/how-to-update-ubuntu-packages-on-18-04-bionic-beaver-linux) (por ejemplo).
 Los comandos que tendrá que utilizar son:
 ```
 $ sudo apt update
@@ -178,13 +173,13 @@ Si el sistema le pregunta si desea instalar `grub`, responda que no.
 Los comandos que se ejecutan con `sudo` se están ejecutando como "superusuario" de modo que **nunca** ejecute comandos con `sudo` salvo 
 que sepa muy bien lo que está haciendo o se le indique (como en este caso) cómo usarlo.
 
-11. Para consultar la IP de una máquina en un terminal Linux utilice el comando:
+10. Para consultar la IP de una máquina en un terminal Linux utilice el comando:
 ```
 $ ifconfig -a
 ```
 Si recibe el mensaje de que `ifconfig` no está instalado, se le indicará qué comando ejecutar para instalarlo. Ejecútelo y pruebe el comando de nuevo. Observe que la IP mostrada es la misma que se le indicó en la interfaz web del IaaS.
 
-12. Edite los ficheros necesarios para [cambiar el nombre lógico de la máquina](https://askubuntu.com/questions/9540/how-do-i-change-the-computer-name) que le ha sido asignada. 
+11. Edite los ficheros necesarios para [cambiar el nombre lógico de la máquina](https://askubuntu.com/questions/9540/how-do-i-change-the-computer-name) que le ha sido asignada. 
 Se propone utilizar como nombre algo como Ubuntu-18-ASIG-XXX (cambiando "ASIG" por el acrónimo de la asignatura y 
 "XXX" por lo que Ud. quiera), aunque puede Ud. usar para su máquina el nombre que prefiera.
 Para realizar ese cambio ha de editar Ud. los siguientes ficheros (necesita usar `sudo` para tener permisos de
@@ -200,7 +195,7 @@ $ sudo reboot
 ```
 
 #### git y GitHub
-13. Compruebe que `git` está instalado en su máquina:
+12. Compruebe que `git` está instalado en su máquina:
 ```
 $ git --version
 ```
@@ -217,7 +212,7 @@ Hay mucha más documentación sobre Git en línea:
 * [Online Simulator/Tutorial](https://learngitbranching.js.org/?locale=es_ES)
 Con posterioridad a esta práctica, revise esta documentación.
 
-14. Consiga que se pueda subir código desde su máquina virtual hacia su cuenta GitHub sin necesidad de autentificación. 
+13. Consiga que se pueda subir código desde su máquina virtual hacia su cuenta GitHub sin necesidad de autentificación. 
 Consulte para ello las instrucciones
 [Adding a new SSH key to your GitHub account](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/adding-a-new-ssh-key-to-your-github-account)
 En su máquina virtual ejecute los siguientes comandos para generar e instalar una clave SSH (donde `alu...edu.es` es la cuenta que haya utilizado para registrarse en GitHub):
@@ -232,7 +227,7 @@ $ cat ~/.ssh/id_ed25519.pub
   - En su cuenta de GitHub, haga clic en el icono con su foto en la esquina superior derecha y luego en *Settings.* En la columna izquierda, haga clic *SSH and GPG keys* del apartado *Access* y luego en el botón *New SSH key.*
   - Dé a su nueva clave el nombre que prefiera (por ejemplos, "Informática Básica 2026/2027") y pegue el contenido de la clave generada. Pulse en "Add SSH Key" y su cuenta GitHub quedará enlazada con su máquina virtual.
 
-15. Cree un directorio `practicas` y clone en él un repositorio git:
+14. Cree un directorio `practicas` y clone en él un repositorio git:
 ```
 cd
 mkdir practicas
@@ -241,7 +236,7 @@ git clone git@github.com:ULL-IB/P01-IaaS.git P01-EntornoIaaS
 ```
 
 #### Edición y compilación
-16. Colóquese en el directorio `practicas` (`cd ~/practicas`) y utilice el editor `vi` para escribir el código fuente del programa 
+15. Colóquese en el directorio `practicas` (`cd ~/practicas`) y utilice el editor `vi` para escribir el código fuente del programa 
 [hello_world.cc](https://github.com/ULL-IB/code-examples/blob/main/introduction/hello_world.cc).
 A continuación, compile y ejecute ese programa.
 Para compilar el programa escriba el siguiente comando (que estudiaremos más adelante en la asignatura)
@@ -259,14 +254,14 @@ Para ejecutar el programa escriba:
 
 Los siguientes dos pasos son opcionales y deben ejecutarse en el equipo *desde el cual* se va a conectar a su máquina virtual, si éste tiene un sistema operativo Linux y tiene Ud. permisos de administrador
 
-17. Siga [estas instrucciones](http://www.linuxproblem.org/art_9.html) 
+16. Siga [estas instrucciones](http://www.linuxproblem.org/art_9.html) 
 para establecer la configuración de la máquina de modo que se pueda conectar a ella sin necesidad de escribir el password en cada conexión. 
 Para poder conectarse por ssh con las máquinas virtuales de IaaS ull ha de autentificarse en la página [valida.ull.es](https://valida.ull.es).  
 Recuerde que en caso de acceder desde fuera de del campus ULL ha de hacerlo mediante una conexión VPN. 
 Consulte [esta referencia](https://www.ull.es/servicios/stic/2026/07/08/servicio-de-vpn-de-la-ull/) 
 (en el Centro de Cálculo, por ahora no lo necesita) para conectarse a través de vpn.
 
-18. También resulta conveniente utilizar alguno de los métodos (ssh config o alias) que se presentan en 
+17. También resulta conveniente utilizar alguno de los métodos (ssh config o alias) que se presentan en 
 [estas instrucciones](https://www.digitalocean.com/community/tutorials/how-to-create-an-ssh-shortcut)
 de modo que se simplifique la conexión con la máquina remota pudiendo escribir algo como:
 ```
