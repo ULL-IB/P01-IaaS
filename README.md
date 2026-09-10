@@ -44,7 +44,7 @@ Tenga esto en cuenta a la hora de decidirse por cualquiera de estas opciones.
 
 Una opción alternativa que se considera menos adecuada consiste en no instalar un sistema Linux sino acceder 
 a la máquina virtual IaaS de la asignatura desde Windows usando para ello un cliente *ssh*. 
-Se recomienda para este caso utilizar el que viene instalado con Windows 10 y posteriores, a través de la aplicación *Símbolo del Sistema*, o a través del [cliente ssh PuTTY](https://www.putty.org/) que puede Ud. descargar libremente.  
+Se recomienda para este caso utilizar el que viene instalado con Windows 10 y posteriores, a través de la aplicación *Símbolo del Sistema*.  
 
 En todo caso, recuerde que si desea acceder a las máquinas de la Universidad desde fuera del campus universitario necesitará Ud. configurar una conexión usando [VPN](https://es.wikipedia.org/wiki/Red_privada_virtual).
 Para configurar la conexión VPN siga las instrucciones de la página [Servicio de VPN de la ULL](https://www.ull.es/servicios/stic/2026/07/08/servicio-de-vpn-de-la-ull/).  
@@ -60,10 +60,7 @@ recordar, sobre todo para otras personas.
 Podrá utilizar indistintamente las direcciones `aluXXXX@ull.edu.es` y el alias que configure.
 
 #### GitHub
-3. [GitHub](https://github.com/) es una plataforma de desarrollo colaborativo para alojar proyectos utilizando el sistema de control de versiones Git.
-Cree una cuenta en [GitHub](https://github.com/) y configure su perfil de esa cuenta de modo que incluya una imagen (fotografía) en la que se le reconozca y haga que la cuenta de e-mail asociada sea la dirección institucional o su alias.
-Para la configuración de esa cuenta se le recomienda usar su nombre real, puesto que sus repositorios de código en GitHub
-pasarán a formar parte de su curriculum profesional.
+3. [GitHub](https://github.com/) es una plataforma de desarrollo colaborativo para alojar proyectos utilizando el sistema de control de versiones Git. Cree una cuenta en [GitHub](https://github.com/) y configure su perfil de usuario para que la cuenta de correo electrónico asociada sea su dirección institucional o su alias. También es recomendable incluir una imagen (fotografía) en la que se le reconozca y usar su nombre real, puesto que sus repositorios de código en GitHub pasarán a formar parte de su curriculum profesional.
 
 #### El editor Vim
 4. Para editar ficheros en las prácticas de la asignatura se utilizará el editor [vim](https://www.vim.org/) (*vim* es *vi - iMproved*) .
