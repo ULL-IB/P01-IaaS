@@ -34,10 +34,7 @@ Hay al menos tres opciones para ello, que son las siguientes en orden de mayor a
   Para esta instalación necesitará Ud. crear un pendrive desde el que pueda arrancar el ordenador, siguiendo para ello (por ejemplo) 
   [estas otras instrucciones](https://ubuntu.com/tutorials/create-a-usb-stick-on-windows#1-overview).
 
-  * Instalar Ubuntu como un sistema "invitado" dentro de Windows, usando para ello un
-  software de virtualización como VirtualBox. 
-  La página [Install Ubuntu on Oracle VirtualBox](https://brb.nci.nih.gov/seqtools/installUbuntu.html)
-  contiene las instrucciones a seguir para instalar Ubuntu como sistema invitado en Windows.
+  * Instalar Ubuntu como un sistema "invitado" dentro de Windows, usando para ello un software de virtualización como VirtualBox. [Este tutorial](https://ubuntu.com/tutorials/how-to-run-ubuntu-desktop-on-a-virtual-machine-using-virtualbox) contiene las instrucciones a seguir para instalar Ubuntu como sistema invitado en Windows.
   
   * Utilizar WSL, [Windows subsystem for Linux](https://docs.microsoft.com/es-es/windows/wsl/install-win10).
   WSL es una característica introducida en Windows 10 que permite instalar un núcleo Linux directamente sobre el sistema operativo de Microsoft.
